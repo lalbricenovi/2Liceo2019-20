@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Movimiento rectilineo uniforme</title>
+    <style>
+        body{
+            /*display:grid sirve para ubicar los elementos en una rejilla en 2
+            dimensiones.*/
+            display:grid;
+            grid-template-columns: 400px 400px;
+            grid-template-rows: auto;
+            grid-template-areas: 
+            "parrafo charmander"
+            "parrafo grafico";
+            grid-gap: 10px;
+        }
+        p{
+            grid-area: parrafo;
+            align-self: center;/* align se refiere a la vertical*/
+        }
+        img{
+            width:100%;/*100% del elemento padre*/
+        }
+        #charmander{
+            grid-area:charmander;
+        }
+        #grafico{
+            grid-area:grafico;
+        }
+    </style>
+</head>
+<body>
+    <p>El movimiento rectilineo uniforme es aquel en el cual la velocidad es constante.
+       El gráfico espacio tiempo es una línea recta.
+    </p>
+    <img id="charmander" src="mru.jpg" alt="Grafico mru">
+    <img id="grafico" src="mru2.png" alt="Grafico 2">
+</body>
+</html>

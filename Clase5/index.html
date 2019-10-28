@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Seconda Liceo</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+        body{
+            margin:20px;
+            display:grid;
+            grid-template-columns: 1fr 2fr;
+            grid-template-rows: auto;
+            grid-template-areas: 
+            "encabezado tabla"
+            "parrafo tabla";
+        }
+        p{
+            grid-area:parrafo;
+        }
+        h1{
+            grid-area:encabezado;
+        }
+        table{
+            grid-area:tabla;
+        }
+    </style>
+</head>
+<body>
+    <h1>Seconda Liceo</h1>
+    <p>Seconda Liceo es un curso del Gimnasio Alessandro Volta
+        que está compuesto de 19 estudiantes. Todos ellos son 
+        muy responsables con CADA UNA DE SUS TAREAS.
+    </p>
+    <table class="table">
+        <tr>
+            <th>#</th>
+            <th>Nombres</th>
+            <th>Apellidos</th>
+            <th>Edad</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Isabella</td>
+            <td>Álvarez Diaz</td>
+            <td>14</td>
+        </tr>
+    </table>
+</body>
+</html>
